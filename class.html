@@ -98,7 +98,7 @@
                 <tr>
                     <th>No</th>
                     <th>Name</th>
-                    <th>Age</th>
+                    <th>Age</th>x
                     <th  colspan="2">Contact Info</th>
                 </tr>
             </tfoot>
@@ -151,15 +151,39 @@
         <br><br>
         <!-- working with forms  -->
         <!-- default action="class.html, method="get" -->
-        <form action="" method="">
-            <input type="text" placeholder="Input type for text" name="full_name" value="">
-            <input type="email" placeholder="Input type for email" name="email">
-            <input type="tel" placeholder="input type for tel" name="telephone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        <form action="" method="" enctype="multipart/form-data">
+            <input type="text" placeholder="Input type for text" name="full_name" value=""> <br>
+            <label for="textOne">Sample Label</label>
+            <input type="email" placeholder="Input type for email" name="email" id="textOne"><br>
+            <input type="tel" placeholder="input type for tel" name="telephone_number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> <br>
+            <input type="number" placeholder="input type number" name="number" min="10" max="100" step="10"> <br>
+            <input type="password" placeholder="your password"  name="passmord"><br>
+            <input type="date" placeholder="input type date" name="date" min="" max=""> <br>
+            <input type="time" placeholder="input type time" name="time"><br>
+            <input type="datetime-local" placeholder="input type datetime" name="datetime"> <br>
+            <input type="month" name="month">
+            <input type="week" name="week"> <br>
+            <input type="checkbox" name="checkbox" checked> <!--users can select multiple responses or check for consent-->
+            <input type="radio" name="radioButton" checked>
+            <input type="radio" name="radioButton"> <br>
+            <input type="file" name="fileInput" accept=".pdf, .docx, .png"> <br>
+            <textarea placeholder="Hello" name="" id="" cols="50" rows="5"></textarea>
+            <select name="select" multiple>
+                <option value="">red</option>
+                <option value="">blue</option>
+                <option value="">green</option>
+                <option value="">yellow</option>
+            </select>
+
+            <input type="reset" name="reset">
 
             <input type="submit" name="submit">
+            
+            <br><br><br>
+            
+            <br><br> <br><b><br></br>
         </form>
-     
-        number 
+      
         password 
         date 
         datetime
